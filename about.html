@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>About — Cantilever Holdings LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --gold:#8B6914;
+  --gold-light:#C8A96E;
+  --gold-pale:#F5EDD8;
+  --ink:#1A1410;
+  --ink-mid:#4A4238;
+  --ink-light:#7A7060;
+  --ink-faint:#A8A098;
+  --paper:#FDFAF5;
+  --paper-warm:#F7F2E8;
+  --paper-rule:#EDE8DE;
+}
+body{
+  font-family:'DM Sans',sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+.header{
+  padding:2.5rem 3rem 1.5rem;
+  border-bottom:1px solid var(--paper-rule);
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:1rem;
+}
+.eyebrow{
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:0.22em;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:0.5rem;
+}
+.header h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:2.2rem;
+  font-weight:500;
+  color:var(--ink);
+}
+.header-nav a{
+  font-size:13px;
+  color:var(--ink-light);
+  text-decoration:none;
+  margin-left:1.5rem;
+}
+.header-nav a:hover{color:var(--gold)}
+
+.main{
+  flex:1;
+  max-width:720px;
+  margin:0 auto;
+  padding:3.5rem 3rem 2rem;
+  width:100%;
+}
+
+.lede{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.65rem;
+  font-style:italic;
+  line-height:1.5;
+  color:var(--ink-mid);
+  margin-bottom:2.5rem;
+}
+
+.bio p{
+  font-size:15.5px;
+  line-height:1.85;
+  color:var(--ink-mid);
+  margin-bottom:1.4rem;
+}
+.bio p:last-child{margin-bottom:0}
+
+.divider{
+  border-top:1px solid var(--paper-rule);
+  margin:2.75rem 0;
+}
+
+.beyond-label{
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:0.15em;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:1rem;
+}
+.beyond-list{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+.beyond-tag{
+  font-size:13px;
+  padding:7px 16px;
+  background:var(--paper-warm);
+  border:1px solid var(--paper-rule);
+  border-radius:20px;
+  color:var(--ink-mid);
+}
+
+.motto{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.4rem;
+  font-style:italic;
+  line-height:1.5;
+  color:var(--gold);
+  text-align:center;
+  padding:2.5rem 0 0.5rem;
+}
+.motto-attr{
+  text-align:center;
+  font-size:11px;
+  letter-spacing:0.1em;
+  text-transform:uppercase;
+  color:var(--ink-faint);
+  margin-top:0.6rem;
+}
+
+.footer{
+  padding:1.5rem 3rem;
+  border-top:1px solid var(--paper-rule);
+  background:var(--paper-warm);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:0.5rem;
+  margin-top:3rem;
+}
+.footer-l{font-size:11px;color:var(--ink-faint)}
+.footer-r{
+  font-family:'Cormorant Garamond',serif;
+  font-size:12px;
+  color:var(--ink-faint);
+  font-style:italic;
+}
+
+@media (max-width:640px){
+  .header,.main,.footer{padding-left:1.25rem;padding-right:1.25rem}
+  .header-nav a{margin-left:1rem}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div>
+    <div class="eyebrow">Cantilever Holdings LLC</div>
+    <h1>About</h1>
+  </div>
+  <div class="header-nav">
+    <a href="index.html">Work</a>
+  </div>
+</div>
+
+<div class="main">
+
+  <p class="lede">Twenty years translating complex problems into things that actually ship &mdash; whether that's an enterprise operating model or a Saturday-morning quote that lands in your inbox without anyone touching a keyboard.</p>
+
+  <div class="bio">
+    <p>I'm Rahul Nair, principal of Cantilever Holdings. Most recently I spent twelve years at Fidelity Investments, the last several as Director of Strategy &amp; Planning for Asset Management Technology &mdash; building the portfolio governance, executive reporting, and Agile delivery standards that turned a fragmented technology organization into one with a reliable operating rhythm. Before that, the arc looks less linear than it actually was: I came up as a Cisco solutions architect and enterprise video engineer, standing up the U.S. federal government's nationwide video infrastructure, including the communications backbone for a presidential transition. That consulting-and-systems instinct never left &mdash; it's just been pointed at different problems since.</p>
+
+    <p>What connects the two halves of that career is a habit of treating organizational change the same way I'd treat a build: form a hypothesis, ship something small, read the actual evidence when it breaks, and let that evidence &mdash; not the original plan &mdash; decide what happens next. At Fidelity that meant identifying an anti-pattern that reshaped a business unit's resourcing, or running a Pareto analysis that turned a stalled content strategy into an 85% sales win rate. Outside of work it means I'll happily spend a weekend rebuilding a personal automation through four different architectures before landing on the one that actually holds up &mdash; and writing up what each failure taught me, because that part is usually more interesting than the part that worked the first time.</p>
+
+    <p>Cantilever Holdings is where that instinct now operates full-time: technology strategy, portfolio governance, and change enablement for organizations that need someone equally comfortable in front of a steering committee and inside a terminal.</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="beyond-label">Beyond the work</div>
+  <div class="beyond-list">
+    <span class="beyond-tag">Award-winning filmmaker</span>
+    <span class="beyond-tag">Published fiction writer</span>
+    <span class="beyond-tag">Community theater actor &amp; producer</span>
+    <span class="beyond-tag">Youth cricket coach</span>
+    <span class="beyond-tag">Vintage hi-fi &amp; vinyl collector</span>
+  </div>
+
+  <div class="motto">&ldquo;Giving voice to the voiceless through storytelling.&rdquo;</div>
+  <div class="motto-attr">Personal motto</div>
+
+</div>
+
+<div class="footer">
+  <div class="footer-l">Lexington, MA</div>
+  <div class="footer-r">Cantilever Holdings LLC</div>
+</div>
+
+</body>
+</html>
