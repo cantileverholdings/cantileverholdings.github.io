@@ -33,6 +33,11 @@ body{
 .header{
   padding:2.5rem 3rem 1.5rem;
   border-bottom:1px solid var(--paper-rule);
+  display:flex;
+  align-items:flex-end;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:1rem;
 }
 .eyebrow{
   font-size:10px;
@@ -48,6 +53,12 @@ body{
   font-weight:500;
   color:var(--ink);
 }
+.header-nav a{
+  font-size:13px;
+  color:var(--ink-light);
+  text-decoration:none;
+}
+.header-nav a:hover{color:var(--gold)}
 
 .main{
   flex:1;
@@ -139,8 +150,13 @@ body{
 <body>
 
 <div class="header">
-  <div class="eyebrow">Cantilever Holdings LLC</div>
-  <h1>Rahul Nair</h1>
+  <div>
+    <div class="eyebrow">Cantilever Holdings LLC</div>
+    <h1>Rahul Nair</h1>
+  </div>
+  <div class="header-nav">
+    <a href="about.html">About</a>
+  </div>
 </div>
 
 <div class="main">
