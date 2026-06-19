@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Cantilever Holdings LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --gold:#8B6914;
+  --gold-light:#C8A96E;
+  --gold-pale:#F5EDD8;
+  --ink:#1A1410;
+  --ink-mid:#4A4238;
+  --ink-light:#7A7060;
+  --ink-faint:#A8A098;
+  --paper:#FDFAF5;
+  --paper-warm:#F7F2E8;
+  --paper-rule:#EDE8DE;
+}
+body{
+  font-family:'DM Sans',sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+.header{
+  padding:2.5rem 3rem 1.5rem;
+  border-bottom:1px solid var(--paper-rule);
+}
+.eyebrow{
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:0.22em;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:0.5rem;
+}
+.header h1{
+  font-family:'Cormorant Garamond',serif;
+  font-size:2.2rem;
+  font-weight:500;
+  color:var(--ink);
+}
+
+.main{
+  flex:1;
+  max-width:760px;
+  margin:0 auto;
+  padding:3.5rem 3rem 4rem;
+  width:100%;
+}
+.lede{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.6rem;
+  font-style:italic;
+  line-height:1.5;
+  color:var(--ink-mid);
+  margin-bottom:3rem;
+  max-width:600px;
+}
+
+.work-list{
+  display:flex;
+  flex-direction:column;
+  gap:0;
+}
+.work-item{
+  display:block;
+  text-decoration:none;
+  color:inherit;
+  padding:1.75rem 0;
+  border-top:1px solid var(--paper-rule);
+  transition:padding-left 0.15s ease;
+}
+.work-item:first-child{border-top:1px solid var(--paper-rule)}
+.work-item:hover{padding-left:0.5rem}
+.work-kicker{
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--gold);
+  margin-bottom:0.4rem;
+}
+.work-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:1.7rem;
+  font-weight:500;
+  color:var(--ink);
+  margin-bottom:0.5rem;
+  display:flex;
+  align-items:baseline;
+  justify-content:space-between;
+  gap:1rem;
+}
+.work-arrow{
+  font-size:1.1rem;
+  color:var(--gold-light);
+  flex-shrink:0;
+}
+.work-desc{
+  font-size:14.5px;
+  color:var(--ink-light);
+  line-height:1.65;
+  max-width:560px;
+}
+
+.footer{
+  padding:1.5rem 3rem;
+  border-top:1px solid var(--paper-rule);
+  background:var(--paper-warm);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+  gap:0.5rem;
+}
+.footer-l{font-size:11px;color:var(--ink-faint)}
+.footer-r{
+  font-family:'Cormorant Garamond',serif;
+  font-size:12px;
+  color:var(--ink-faint);
+  font-style:italic;
+}
+
+@media (max-width:640px){
+  .header,.main,.footer{padding-left:1.25rem;padding-right:1.25rem}
+  .work-title{font-size:1.4rem}
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="eyebrow">Cantilever Holdings LLC</div>
+  <h1>Rahul Nair</h1>
+</div>
+
+<div class="main">
+  <p class="lede">Technology strategy, portfolio governance, and organizational change &mdash; with a builder's habit of testing ideas in working software before putting them in a slide.</p>
+
+  <div class="work-list">
+    <a class="work-item" href="ddop-case-study.html">
+      <div class="work-kicker">Build case study &middot; June 2026</div>
+      <div class="work-title">
+        <span>Daily Dose of Positivity</span>
+        <span class="work-arrow">&rarr;</span>
+      </div>
+      <div class="work-desc">Two years of hand-picking a quote each morning, rebuilt into an unattended AI service &mdash; four architectures attempted, three abandoned in production, before landing on a cloud-native pipeline.</div>
+    </a>
+
+    <a class="work-item" href="change-framework.html">
+      <div class="work-kicker">Framework</div>
+      <div class="work-title">
+        <span>Change Management Framework</span>
+        <span class="work-arrow">&rarr;</span>
+      </div>
+      <div class="work-desc">A four-pillar operating model for organizational change &mdash; discover, prepare, reinforce, sustain &mdash; grounded in case studies from enterprise technology transformation.</div>
+    </a>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="footer-l">Lexington, MA</div>
+  <div class="footer-r">Cantilever Holdings LLC</div>
+</div>
+
+</body>
+</html>
