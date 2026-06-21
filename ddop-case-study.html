@@ -4,6 +4,8 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>From Manual Ritual to Cloud Service — Cantilever Holdings LLC</title>
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-warm-48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-warm-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -43,6 +45,16 @@ body{
   justify-content:space-between;
   flex-wrap:wrap;
   gap:1rem;
+}
+.header-brand{
+  display:flex;
+  align-items:center;
+  gap:0.6rem;
+}
+.header-brand img{
+  height:28px;
+  width:auto;
+  display:block;
 }
 .eyebrow{
   font-size:10px;
@@ -438,7 +450,10 @@ body{
 
 <div class="header">
   <div>
-    <div class="eyebrow">Cantilever Holdings LLC &middot; Applied AI &amp; Systems Thinking</div>
+    <div class="header-brand">
+      <img src="/assets/icon-warm-256.png" alt="Cantilever Holdings mark"/>
+      <div class="eyebrow" style="margin-bottom:0">Cantilever Holdings LLC &middot; Applied AI &amp; Systems Thinking</div>
+    </div>
     <h1>Build Case Study</h1>
   </div>
   <div class="header-meta">June 2026<br/>Two weeks, four architectures</div>
